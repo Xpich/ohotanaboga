@@ -18,7 +18,7 @@ let i; //номер листа
 let n = 0; // число перевернутых листов
 
 window.onload = () => {
-for(i=1; i<=5; i++) {
+for(i=1; i<=7; i++) {
 document.getElementById('S'+i).onclick = function(event) {
 if(getComputedStyle(this).animationPlayState === 'paused') switch(n) {
 case Number(this.id.slice(1)) - 1: n++; rot(this, 'normal');  break;
