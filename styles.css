@@ -171,23 +171,29 @@ transform: translateZ(0) rotateY(0);
 animation-duration: 1s; animation-timing-function: linear;
 animation-fill-mode: both; animation-play-state: paused;
 }
-#S1 { z-index: 50; animation-name: S1RY; }
-#S2 { z-index: 40; animation-name: S2RY; }
-#S3 { z-index: 30; animation-name: S3RY; }
-#S4 { z-index: 20; animation-name: S4RY; }
-#S5 { z-index: 10; animation-name: S5RY; }
-@keyframes S1RY { 0% { z-index: 50; transform: translateZ(0) rotateY(0); } 50% { z-index: 50; transform: translateZ(0) rotateY(-90deg); } 100% { z-index: 10; transform: translateZ(0) rotateY(-180deg); } }
-@keyframes S2RY { 0% { z-index: 40; transform: translateZ(0) rotateY(0); } 50% { z-index: 40; transform: translateZ(0) rotateY(-90deg); } 100% { z-index: 20; transform: translateZ(0) rotateY(-180deg); } }
-@keyframes S3RY { 0% { z-index: 30; transform: translateZ(0) rotateY(0); } 50% { z-index: 30; transform: translateZ(0) rotateY(-90deg); } 100% { z-index: 30; transform: translateZ(0) rotateY(-180deg); } }
-@keyframes S4RY { 0% { z-index: 20; transform: translateZ(0) rotateY(0); } 50% { z-index: 40; transform: translateZ(0) rotateY(-90deg); } 100% { z-index: 40; transform: translateZ(0) rotateY(-180deg); } }
-@keyframes S5RY { 0% { z-index: 10; transform: translateZ(0) rotateY(0); } 50% { z-index: 50; transform: translateZ(0) rotateY(-90deg); } 100% { z-index: 50; transform: translateZ(0) rotateY(-180deg); } }
+#S1 { z-index: 70; animation-name: S1RY; }
+#S2 { z-index: 60; animation-name: S2RY; }
+#S3 { z-index: 50; animation-name: S3RY; }
+#S4 { z-index: 40; animation-name: S4RY; }
+#S5 { z-index: 30; animation-name: S5RY; }
+#S6 { z-index: 20; animation-name: S6RY; }
+#S7 { z-index: 10; animation-name: S7RY; }
+@keyframes S1RY { 0% { z-index: 70; transform: translateZ(0) rotateY(0); } 50% { z-index: 70; transform: translateZ(0) rotateY(-90deg); } 100% { z-index: 10; transform: translateZ(0) rotateY(-180deg); } }
+@keyframes S2RY { 0% { z-index: 60; transform: translateZ(0) rotateY(0); } 50% { z-index: 60; transform: translateZ(0) rotateY(-90deg); } 100% { z-index: 20; transform: translateZ(0) rotateY(-180deg); } }
+@keyframes S3RY { 0% { z-index: 50; transform: translateZ(0) rotateY(0); } 50% { z-index: 50; transform: translateZ(0) rotateY(-90deg); } 100% { z-index: 30; transform: translateZ(0) rotateY(-180deg); } }
+@keyframes S4RY { 0% { z-index: 40; transform: translateZ(0) rotateY(0); } 50% { z-index: 40; transform: translateZ(0) rotateY(-90deg); } 100% { z-index: 40; transform: translateZ(0) rotateY(-180deg); } }
+@keyframes S5RY { 0% { z-index: 30; transform: translateZ(0) rotateY(0); } 50% { z-index: 50; transform: translateZ(0) rotateY(-90deg); } 100% { z-index: 50; transform: translateZ(0) rotateY(-180deg); } }
+@keyframes S6RY { 0% { z-index: 20; transform: translateZ(0) rotateY(0); } 50% { z-index: 60; transform: translateZ(0) rotateY(-90deg); } 100% { z-index: 60; transform: translateZ(0) rotateY(-180deg); } }
+@keyframes S7RY { 0% { z-index: 10; transform: translateZ(0) rotateY(0); } 50% { z-index: 70; transform: translateZ(0) rotateY(-90deg); } 100% { z-index: 70; transform: translateZ(0) rotateY(-180deg); } }
 
 .wrapper { position: absolute; width: 100%; height: 100%; cursor: pointer; }
-#F1 { transform: translateZ(+5px); } #B1 { transform: translateZ(-1px); }
-#F2 { transform: translateZ(+4px); } #B2 { transform: translateZ(-2px); }
-#F3 { transform: translateZ(+3px); } #B3 { transform: translateZ(-3px); }
-#F4 { transform: translateZ(+2px); } #B4 { transform: translateZ(-4px); }
-#F5 { transform: translateZ(+1px); } #B5 { transform: translateZ(-5px); }
+#F1 { transform: translateZ(+7px); } #B1 { transform: translateZ(-1px); }
+#F2 { transform: translateZ(+6px); } #B2 { transform: translateZ(-2px); }
+#F3 { transform: translateZ(+5px); } #B3 { transform: translateZ(-3px); }
+#F4 { transform: translateZ(+4px); } #B4 { transform: translateZ(-4px); }
+#F5 { transform: translateZ(+3px); } #B5 { transform: translateZ(-5px); }
+#F6 { transform: translateZ(+2px); } #B6 { transform: translateZ(-6px); }
+#F7 { transform: translateZ(+1px); } #B7 { transform: translateZ(-7px); }
 
 .odd_page {
 position: absolute; width: 100%; height: 100%;
@@ -207,8 +213,8 @@ backface-visibility: hidden;
 #S1 .odd_page  { background-image: url('images/photos/cover.jpg'); background-size: 100% 100%; }
 #S1 .even_page { box-sizing: border-box; border: calc(var(--ratio)*8px) solid #844; border-right: 0; }
 #S2 .odd_page  { text-align: right; }
-#S5 .odd_page  { box-sizing: border-box; border: calc(var(--ratio)*8px) solid #844; border-left: 0; }
-#S5 .even_page { background-color: #844; display: flex; justify-content: center; }
+#S7 .odd_page  { box-sizing: border-box; border: calc(var(--ratio)*8px) solid #844; border-left: 0; }
+#S7 .even_page { background-color: #844; display: flex; justify-content: center; }
 
 .photo {
 position: absolute; top: calc(var(--ratio)*25px);
@@ -250,7 +256,7 @@ transition: transform 0.25s ease-out;
 .loupe:hover { transform: scale(1.25) translate3d(calc(var(--ratio)*(-32px)), calc(var(--ratio)*(-32px)), +1px); }
 
 p { font-family: "Marck Script"; line-height: 1.0; word-spacing: -0.25em; letter-spacing: normal; }
-.paper p            { padding: calc(var(--ratio)*31px) calc(var(--ratio)*31px); font-size: calc(var(--ratio)*41px); color: red;   }
-#S2 p, #S3 p, #S4 p { padding: calc(var(--ratio)*25px) calc(var(--ratio)*25px); font-size: calc(var(--ratio)*19px); color: black; }
-#S5 p               { padding: calc(var(--ratio)*19px) calc(var(--ratio)*25px); font-size: calc(var(--ratio)*19px); color: #FF9;  }
-.continue p         { padding: calc(var(--ratio)*31px) calc(var(--ratio)*31px); font-size: calc(var(--ratio)*31px); color: black; }
+.paper p    { padding: calc(var(--ratio)*31px) calc(var(--ratio)*31px); font-size: calc(var(--ratio)*41px); color: red;   }
+.sheet p    { padding: calc(var(--ratio)*25px) calc(var(--ratio)*25px); font-size: calc(var(--ratio)*19px); color: black; }
+#S7 p       { padding: calc(var(--ratio)*19px) calc(var(--ratio)*25px); font-size: calc(var(--ratio)*19px); color: #FF9;  }
+.continue p { padding: calc(var(--ratio)*31px) calc(var(--ratio)*31px); font-size: calc(var(--ratio)*31px); color: black; }
