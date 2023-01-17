@@ -28,6 +28,7 @@ document.querySelector('.candlelight').onclick = light;
 document.querySelector('.loupe').onclick = zoom;
 document.getElementById('S1').addEventListener('click', disappear);
 document.getElementById('S3').addEventListener('click', appearance);
+document.getElementById('S5').addEventListener('click', surveillance);
 document.getElementById('S6').addEventListener('click', attention); }
 
 function light() {
@@ -38,6 +39,7 @@ document.querySelector('.floor').style.animationPlayState = 'running';
 document.querySelector('.candle').style.animationPlayState = 'running';
 document.querySelector('.glass').style.animationPlayState = 'running'; }
 function appearance() { document.querySelector('.skull').style.animationPlayState = 'running'; }
+function surveillance() { document.querySelector('.eye').style.animationPlayState = 'running'; }
 function attention() { document.querySelector('.continue').style.animationPlayState = 'running'; }
 
 function rot(sheet, direction) {
